@@ -19,18 +19,23 @@
                 <h2 class="text-md font-semibold text-gray-600">Tecnologia e arredi</h2>
                 <h2 class="text-md font-semibold text-gray-600">per scuole e aziende</h2>
             </div>
-            <h2 class="text-lg font-bold mb-2">Contatti</h2>
-            <p>📞 Telefono: <a href="tel:+390399112680" class="text-blue-500">+39 0399112680</a></p>
-            <p>📧 Email: <a href="mailto:info@freedomsr.com">direzione@educorp.it</a></p>
-            <p>🌐 Sito web: <a href="https://educorp.it/" target="_blank" rel="noopener noreferrer">educorp.it</a></p>
-            <p>📍 Sede Operativa: Piazza Roma 2, 20861 Brugherio MB</p>
-            <p>📍 Sede Legale: Via Caduti del Lavoro 16, 20861 Brugherio (MB)</p>
-            <p>🆔 Partita P.IVA: 07322390969</p>
-            <p>💬 WhatsApp: 
-                <a href="https://wa.me/3755555551" target="_blank" class="text-green-500">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
+            <h2 class="text-lg font-bold mt-4">M4G SRL</h2>
+            <p>📍 Sede Operativa: 
+                <a href="#" onclick="openMap('Piazza Roma 2, 20861 Brugherio MB')" class="text-black">Piazza Roma 2, 20861 Brugherio MB</a>
             </p>
+            <p>📍 Sede Legale: 
+                <a href="#" onclick="openMap('Via Caduti del Lavoro 16, 20861 Brugherio (MB)')" class="text-black">Via Caduti del Lavoro 16, 20861 Brugherio (MB)</a>
+            </p>
+            <p>📞 Telefono: <a href="tel:+390399112680" class="text-black">+390399112680</p>
+            <p>📧 Email: <a href="mailto:info@freedomsr.com">direzione@educorp.it</a></p>
+            <p>🆔 Partita P.IVA: 07322390969</p>
+        
+
+            <!-- Titolo Il nostro sito -->
+            <h2 class="text-lg font-bold mt-4 mb-2">Il nostro sito</h2>
+            <div class="bg-gray-100 p-4 rounded-lg mt-4 cursor-pointer hover:bg-gray-200" id="sito-card">
+                <p class="text-lg font-semibold">Educorp.it</p>
+            </div>
             <h2 class="text-lg font-bold mt-4">Trovami su</h2>
             <div class="space-y-4">
                 <!-- LinkedIn card -->
@@ -52,5 +57,26 @@
             </div>
         </div>
     </div>
+
+    <!-- Popup per il sito web -->
+    <div id="popup-sito" class="hidden fixed top-0 left-0 right-0 bottom-0 bg-gray-600 bg-opacity-50 flex justify-center items-center">
+        <div class="bg-white p-8 rounded-lg text-center w-80">
+            <h3 class="font-bold text-lg">Il nostro sito</h3>
+            <p>Visita il nostro sito web: <a href="https://educorp.it/" target="_blank" rel="noopener noreferrer" class="text-blue-500">educorp.it</a></p>
+            <button class="mt-4 px-4 py-2 bg-red-500 text-white rounded-lg" onclick="closePopup()">Chiudi</button>
+        </div>
+    </div>
+
+    <script>
+        // Apre il popup quando la card "Il nostro sito" viene cliccata
+        document.getElementById('sito-card').addEventListener('click', function() {
+            document.getElementById('popup-sito').classList.remove('hidden');
+        });
+
+        // Funzione per chiudere il popup
+        function closePopup() {
+            document.getElementById('popup-sito').classList.add('hidden');
+        }
+    </script>
 </body>
 </html>
