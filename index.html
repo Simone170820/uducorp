@@ -5,84 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educorp</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {},
+            },
+        };
+    </script>
     <link rel="icon" type="image/png" href="download.png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-100">
-    <div class="flex justify-center mt-4">
-        <div class="bg-white rounded-lg shadow-lg p-4 w-80">
-            <div class="header text-center mb-4">
-                <img src="download.png" alt="Logo Educorp" class="w-20 h-20 rounded-full mx-auto mb-2">
-                <h1 class="text-xl font-bold">Educorp</h1>
-                <h2 class="text-md font-semibold text-gray-600">Tecnologia e arredi</h2>
-                <h2 class="text-md font-semibold text-gray-600">per scuole e aziende</h2>
-            </div>
-            <h2 class="text-lg font-bold mt-4">M4G SRL</h2>
-            <p>📍 Sede Operativa: 
-    <!-- Google Maps link per la sede operativa -->
-    <a href="https://www.google.com/maps?q=Piazza+Roma+2,+20861+Brugherio+MB" target="_blank" class="text-black">Piazza Roma 2, 20861 Brugherio MB (Google Maps)</a> | 
-    <!-- Apple Maps link per la sede operativa -->
-    <a href="https://maps.apple.com/?q=Piazza+Roma+2,+20861+Brugherio+MB" target="_blank" class="text-black">Piazza Roma 2, 20861 Brugherio MB (Apple Maps)</a>
-</p>
-<p>📍 Sede Legale: 
-    <!-- Google Maps link per la sede legale -->
-    <a href="https://www.google.com/maps?q=Via+Caduti+del+Lavoro+16,+20861+Brugherio+(MB)" target="_blank" class="text-black">Via Caduti del Lavoro 16, 20861 Brugherio (MB) (Google Maps)</a> | 
-    <!-- Apple Maps link per la sede legale -->
-    <a href="https://maps.apple.com/?q=Via+Caduti+del+Lavoro+16,+20861+Brugherio+(MB)" target="_blank" class="text-black">Via Caduti del Lavoro 16, 20861 Brugherio (MB) (Apple Maps)</a>
-</p>
-
-
-            <p>📞 Telefono: <a href="tel:+390399112680" class="text-black">+39 0399112680</p>
-            <p>📧 Email: <a href="mailto:info@educorp.it" class="text-black">info@educorp.it</a></p>
-            <p>🆔 Partita P.IVA: 07322390969</p>
+<body class="bg-gray-100 flex justify-center mt-4">
+    <div class="bg-white rounded-lg shadow-lg p-4 w-full max-w-sm">
+        <div class="text-center mb-4">
+            <img src="download.png" alt="Logo Educorp" class="w-20 h-20 rounded-full mx-auto mb-2">
+            <h1 class="text-xl font-bold">Educorp</h1>
+            <h2 class="text-md font-semibold text-gray-600">Tecnologia e arredi per scuole e aziende</h2>
+        </div>
+        <h2 class="text-lg font-bold mt-4">M4G SRL</h2>
+        <p>📍 Sede Operativa: 
+            <a href="https://www.google.com/maps?q=Piazza+Roma+2,+20861+Brugherio+MB" target="_blank" class="text-black hover:text-blue-500">
+                Piazza Roma 2, 20861 Brugherio MB <i class="fas fa-map-marker-alt text-red-500"></i>
+            </a>
+        </p>
+        <p>📍 Sede Legale: 
+            <a href="https://www.google.com/maps?q=Via+Caduti+del+Lavoro+16,+20861+Brugherio+(MB)" target="_blank" class="text-black hover:text-blue-500">
+                Via Caduti del Lavoro 16, 20861 Brugherio (MB) <i class="fas fa-map-marker-alt text-red-500"></i>
+            </a>
+        </p>
+        <p>📞 Telefono: <a href="tel:+390399112680" class="text-black hover:text-blue-500">+39 0399112680</a></p>
+        <p>📧 Email: <a href="mailto:info@educorp.it" class="text-black hover:text-blue-500">info@educorp.it</a></p>
+        <p>🆔 Partita P.IVA: 07322390969</p>
         
-
-            <!-- Titolo Il nostro sito -->
-            <h2 class="text-lg font-bold mt-4 mb-2">Il nostro sito</h2>
-            <a href="https://educorp.it/a" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between bg-gray-100 p-2 rounded-lg hover:bg-gray-200">
-                    <div class="flex items-center">
-                        <span class="ml-4 text-lg">Educorp.it</span>
-                    </div>
-            <h2 class="text-lg font-bold mt-4">Trovami su</h2>
-            <div class="space-y-4">
-                <!-- LinkedIn card -->
-                <a href="https://www.linkedin.com/company/educorp-scuola/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between bg-gray-100 p-2 rounded-lg hover:bg-gray-200">
-                    <div class="flex items-center">
-                        <img alt="LinkedIn logo" class="w-10 h-10" src="inchedin.png" />
-                        <span class="ml-4 text-lg">LinkedIn</span>
-                    </div>
-                    <i class="fas fa-arrow-right text-gray-500"></i>
-                </a>
-                <!-- Facebook card -->
-                <a href="https://www.facebook.com/profile.php?id=61572322900257" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between bg-gray-100 p-2 rounded-lg hover:bg-gray-200">
-                    <div class="flex items-center">
-                        <img alt="Facebook logo" class="w-10 h-10" src="face.png" />
-                        <span class="ml-4 text-lg">Facebook</span>
-                    </div>
-                    <i class="fas fa-arrow-right text-gray-500"></i>
-                </a>
+        <h2 class="text-lg font-bold mt-4">Il nostro sito</h2>
+        <a id="sito-card" href="#" class="flex items-center justify-between bg-gray-100 p-2 rounded-lg hover:bg-gray-200 hover-card">
+            <div class="flex items-center">
+                <span class="ml-4 text-lg">Educorp.it</span>
             </div>
+            <i class="fas fa-arrow-right text-gray-500"></i>
+        </a>
+        
+        <h2 class="text-lg font-bold mt-4">Trovami su</h2>
+        <div class="space-y-4">
+            <a href="https://www.linkedin.com/company/educorp-scuola/" target="_blank" class="flex items-center justify-between bg-gray-100 p-2 rounded-lg hover:bg-gray-200 hover-card">
+                <div class="flex items-center">
+                    <img alt="LinkedIn logo" class="w-10 h-10" src="linkedin.png" />
+                    <span class="ml-4 text-lg">LinkedIn</span>
+                </div>
+                <i class="fas fa-arrow-right text-gray-500"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61572322900257" target="_blank" class="flex items-center justify-between bg-gray-100 p-2 rounded-lg hover:bg-gray-200 hover-card">
+                <div class="flex items-center">
+                    <img alt="Facebook logo" class="w-10 h-10" src="facebook.png" />
+                    <span class="ml-4 text-lg">Facebook</span>
+                </div>
+                <i class="fas fa-arrow-right text-gray-500"></i>
+            </a>
         </div>
     </div>
 
-    <!-- Popup per il sito web -->
     <div id="popup-sito" class="hidden fixed top-0 left-0 right-0 bottom-0 bg-gray-600 bg-opacity-50 flex justify-center items-center">
         <div class="bg-white p-8 rounded-lg text-center w-80">
             <h3 class="font-bold text-lg">Il nostro sito</h3>
-            <p>Visita il nostro sito web: <a href="https://educorp.it/" target="_blank" rel="noopener noreferrer" class="text-blue-500">educorp.it</a></p>
+            <p>Visita il nostro sito web: <a href="https://educorp.it/" target="_blank" class="text-blue-500">educorp.it</a></p>
             <button class="mt-4 px-4 py-2 bg-red-500 text-white rounded-lg" onclick="closePopup()">Chiudi</button>
         </div>
     </div>
 
     <script>
-        // Apre il popup quando la card "Il nostro sito" viene cliccata
-        document.getElementById('sito-card').addEventListener('click', function() {
+        document.getElementById('sito-card').addEventListener('click', function(event) {
+            event.preventDefault();
             document.getElementById('popup-sito').classList.remove('hidden');
         });
-
-        // Funzione per chiudere il popup
+        
         function closePopup() {
             document.getElementById('popup-sito').classList.add('hidden');
         }
